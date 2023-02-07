@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 32px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.game__form * {
+  font-size: 0.5rem;
+  border-collapse: collapse;
+}
+
+.gameRound__table {
+  width: 100%;
+}
+
+.gameRound__table__row {
+  height: 1.5rem;
+  border-top-left-radius: 20px;
+}
+
+.gameRound__table__collumn__number {
+  background-color: rgba(45, 85, 196, 0.781);
+  width: 5%;
+  padding: 0.2rem;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.gameRound__table__collumn__question {
+  background-color: rgba(66, 114, 133, 0.5);
+  width: 60%;
+  padding: 0.2rem;
+}
+
+.gameRound__table__collumn__answer {
+  padding: 0 0.5rem 0 0.5rem;
+  background-color: rgba(16, 51, 83, 0.205);
+  width: 20%;
+  padding: 0.2rem;
+}
+.game__addRound {
+  cursor: pointer;
+  height: 50px;
+}
+.game__addRound:hover {
+  scale: 1.1;
+}

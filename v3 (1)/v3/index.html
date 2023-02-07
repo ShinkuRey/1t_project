@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afisha</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="./jquery.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header_nav_container">
+        <nav class="header_nav">
+          <div>
+            <img
+              src="images/logo.png"
+              alt="BrainOut Logo"
+              class="header_logo"
+            />
+          </div>
+          <div class="header_nav_table">
+            <ul>
+              <li>FAQ</li>
+              <li>Игры</li>
+              <li>Афиша</li>
+              <li>Сообщества</li>
+              <li>
+                <div>Играть</div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      
+      <div class="afisha_top">
+        <h1 class="afisha_heading">Афиша</h1>
+      </div>
+      
+      <div class="filters">
+        <div class="filter_panel">
+          <a class="city_btn" href="#">Выбрать свой город <img class="chevron_c" src="./images/vector3.svg" alt="" width="10px" height="10px"> <img class="chevron_c2" src="./images/vector4.svg" alt="" width="10px" height="10px"> </a>        
+          <div class="city_menu">
+            <div class="filter_list">
+              <div class="city_search">
+                <button class="city_search_btn"><img class="city_searchImg" src="./images/icon_search.svg" alt=""></button>
+                <input class="city_search_text" type="text" placeholder="Введите свой город...">
+              </div>
+                <div class="city_option">
+                  <input class="city_check" type="checkbox" id="москва">
+                  <label class="city_option_text"  for="москва">Москва</label>
+                </div>
+                <div class="city_option">
+                  <input class="city_check" type="checkbox" id="уфа" >
+                  <label class="city_option_text" for="уфа">Уфа</label>
+                </div>
+                <div class="city_option">
+                  <input class="city_check" type="checkbox" id="севастополь" >
+                  <label class="city_option_text" for="севастополь">Севастополь</label>
+                </div>
+                <div class="city_option">
+                  <input class="city_check" type="checkbox" id="спб" >
+                  <label class="city_option_text" for="спб">Санкт-Петербург</label>
+                </div>
+                <div class="city_option">
+                  <input class="city_check" type="checkbox" id="казань" >
+                  <label class="city_option_text" for="казань">Казань</label>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="filter_panel">
+          <a class="filter_btn" href="#">Фильтр <img class="chevron_f" src="./images/vector3.svg" alt="" width="10px" height="10px"> <img class="chevron_f2" src="./images/vector4.svg" alt="" width="10px" height="10px"></a>
+          <div class="filter_menu">
+        <div class="filter_list">
+   
+              <p class="filter_heading">По играм: </p>       
+              <div class="filter_div">
+                <div class="filter_option">
+                  <input class="filter_check" type="checkbox" id="чгк">
+                  <label class="filter_option_text"  for="чгк">Что?Где?Когда?</label>
+                </div>
+                <div class="filter_option">
+                  <input class="filter_check" type="checkbox" id="стрелок">
+                  <label class="filter_option_text"  for="стрелок">Ворошиловский стрелок</label>
+                </div>
+                <div class="filter_option">
+                  <input class="filter_check" type="checkbox" id="викторины">
+                  <label class="filter_option_text"  for="викторины">Викторины</label>
+                </div>
+                <div class="filter_option">
+                  <input class="filter_check" type="checkbox" id="загадки">
+                  <label class="filter_option_text"  for="загадки">Загадки</label>
+                </div>
+    
+              </div>
+                
+
+              <div class="filter_div">
+                <div class="filter_option">
+                  <input class="filter_check" type="checkbox" id="один">
+                  <label class="filter_option_text"  for="один">Одиночные игры</label>
+                </div>
+                <div class="filter_option">
+                  <input class="filter_check" type="checkbox" id="команд">
+                  <label class="filter_option_text"  for="команд">Командные игры</label>
+                </div>
+              </div>
+
+              <div class="filter_div">
+                <div class="filter_option">
+                  <input class="filter_check" type="checkbox" id="онлайн">
+                  <label class="filter_option_text"  for="онлайн">Онлайн формат</label>
+                </div>
+                <div class="filter_option">
+                  <input class="filter_check" type="checkbox" id="офлайн">
+                  <label class="filter_option_text"  for="офлайн">Офлайн формат</label>
+                </div>
+              </div>
+
+              <div class="сalendar">
+                <p>Календарь</p>
+              </div>
+
+      </div>
+          </div>
+        </div>
+        <div class="afisha_grid">
+          <button class="grid1" id="grid_btn"> <img class="grid_icon icon1" src="./images/1.1.jpg" alt="" width="24px" height="24px"> <img class="grid_icon icon2" src="./images/1.2.jpg" alt="" width="24px" height="24px"> </button>
+          <button class="grid2" id="grid_btn2"><img class="grid_icon icon3" src="./images/2.1.jpg" alt="" width="24px" height="24px"> <img class="grid_icon icon4" src="./images/2.2.jpg" alt="" width="24px" height="24px"></button>
+        </div>
+      </div>
+
+      <div class="card_box">
+        <div class="card"> 
+          <div class="card_img">
+            <img class="cardImg" src="./images/image1.png" alt="cardImg">
+          </div> 
+          <div class="card_info">
+            <div class="card_top">
+              <p class="city">Город</p>
+              <p class="date">Дата</p>
+            </div>
+            <div>
+              <div class="card_description">
+                <h2 class="card_heading">Название</h2> 
+                <p class="card_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, 
+                saepe dignissimos</p>
+              </div>
+              <div class="card_links">
+                <button class="card_btn">Купить билет</button>
+                <a class="card_link" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card"> 
+          <div class="card_img">
+            <img class="cardImg" src="./images/image1.png" alt="cardImg">
+          </div> 
+          <div class="card_info">
+            <div class="card_top">
+              <p class="city">Город</p>
+              <p class="date">Дата</p>
+            </div>
+            <div>
+              <div class="card_description">
+                <h2 class="card_heading">Название</h2> 
+                <p class="card_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, 
+                saepe dignissimos</p>
+              </div>
+              <div class="card_links">
+                <button class="card_btn">Купить билет</button>
+                <a class="card_link" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card"> 
+          <div class="card_img">
+            <img class="cardImg" src="./images/image1.png" alt="cardImg">
+          </div> 
+          <div class="card_info">
+            <div class="card_top">
+              <p class="city">Город</p>
+              <p class="date">Дата</p>
+            </div>
+            <div>
+              <div class="card_description">
+                <h2 class="card_heading">Название</h2> 
+                <p class="card_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, 
+                saepe dignissimos</p>
+              </div>
+              <div class="card_links">
+                <button class="card_btn">Купить билет</button>
+                <a class="card_link" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card_box2">
+        <div class="block">
+          <div class="card2"> 
+          </div>
+          <div class="card2"> 
+          </div>
+          <div class="card2"> 
+          </div>
+        </div>
+        <div class="block">
+          <div class="card2"> 
+          </div>
+          <div class="card2"> 
+          </div>
+          <div class="card2"> 
+          </div>
+        </div>
+        <div class="block">
+          <div class="card2"> 
+          </div>
+          <div class="card2"> 
+          </div>
+          <div class="card2"> 
+          </div>
+        </div>
+      </div>
+
+      <div class="nextprev">
+        <a class="prev_btn" href="#"> <img class="chevron_L" src="./images/vector.svg" alt="" height="20px"> Предыдущая страница</a>
+        <select class="select" id="selectID"> 
+          <option class="npoption" value=”1”>1</option>
+          <option class="npoption" value=”1”>2</option>
+          </select>
+        <p class="maxpage">of 1</p>
+        <a class="next_btn" href="#"> Следующая страница <img class="chevron_R" src="./images/vector2.svg" alt="" height="20px"></a>
+      </div>
+      
+      <script>
+        $('.filter_btn').on('click', function(e) {
+          e.preventDefault();
+          $('.filter_btn').toggleClass('btn_active');
+          $('.filter_menu').toggleClass('filter_active');
+          $('.chevron_f').toggleClass('chevron_flip2');
+          $('.chevron_f2').toggleClass('chevron_flip');
+        })
+
+        $('.city_btn').on('click', function(e) {
+          e.preventDefault();
+          $('.city_btn').toggleClass('btn_active');
+          $('.city_menu').toggleClass('filter_active');
+          $('.chevron_c').toggleClass('chevron_flip2');
+          $('.chevron_c2').toggleClass('chevron_flip');
+        })
+      </script>
+      
+      <script>
+          $('#grid_btn').on('click', () => $('.card_box2').css('display', 'none'))
+          $('#grid_btn').on('click', () => $('.card_box').css('display', 'flex'))
+
+
+          $('#grid_btn').on('click', () => $('.icon1').css('opacity', '0'))
+          $('#grid_btn').on('click', () => $('.icon2').css('opacity', '1'))
+          $('#grid_btn').on('click', () => $('.icon4').css('opacity', '0'))
+          $('#grid_btn').on('click', () => $('.icon3').css('opacity', '1'))
+          
+
+          $('#grid_btn2').on('click', () => $('.card_box').css('display', 'none'))
+          $('#grid_btn2').on('click', () => $('.card_box2').css('display', 'flex'))
+
+
+          $('#grid_btn2').on('click', () => $('.icon2').css('opacity', '0'))
+          $('#grid_btn2').on('click', () => $('.icon1').css('opacity', '1'))
+          
+          $('#grid_btn2').on('click', () => $('.icon4').css('opacity', '1'))
+          $('#grid_btn2').on('click', () => $('.icon3').css('opacity', '0'))
+      </script>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__row">
+          <div class="footer__col">
+            <img
+              src="images/logo.png"
+              alt="BrainOut Logo"
+              class="footer__logo"
+            />
+            <div>
+              <ul class="footer__follow">
+                <li>
+                  <a href="tel:+7-812-7313-4321"
+                    ><img
+                      class="footer__follow-logo"
+                      src="images/phone-call.png"
+                      alt="Позвоните нам"
+                  /></a>
+                </li>
+                <li>
+                  <a href="mailto:hello.site@gmail.com"
+                    ><img
+                      class="footer__follow-logo"
+                      src="images/email.png"
+                      alt="Напишите нам"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__col-title">Игры</h3>
+          <ul>
+            <li>Что? Где? Когда?</li>
+            <li>Quiz</li>
+            <li>Своя игра</li>
+            <li>Brain Ring</li>
+          </ul>
+
+          <h3 class="footer__col-title">Афиша</h3>
+          <ul>
+            <li>Ближайшие игры</li>
+            <li>Онлайн игры</li>
+            <li>Офлайн игры</li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__col-title">FAQ</h3>
+          <ul>
+            <li>Как вступить в команду?</li>
+            <li>Где начать игру?</li>
+            <li>Тех. поддержка</li>
+          </ul>
+
+          <h3 class="footer__col-title">Сообщества</h3>
+          <ul>
+            <li>Найти команду</li>
+            <li>Создать команду</li>
+            <li>Посмотреть список команд</li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__col-title">О нас</h3>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
+              velit culpa tempore ipsa iusto reprehenderit soluta accusantium
+              alias et similique!
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer__line" />
+      <div class="footer__copy">
+        <p>BrainOut 2022 &copy; All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 32px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.game__row {
+  display: flex;
+}
+
+.game__form * {
+  font-size: 0.5rem;
+  border-collapse: collapse;
+}
+
+.gameRound__table {
+  width: 100%;
+}
+
+.game__row {
+  height: 1.5rem;
+  border-top-left-radius: 20px;
+}
+
+.game__row__number {
+  background-color: rgba(45, 85, 196, 0.781);
+  width: 5%;
+  padding: 0.2rem;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.game__question__container {
+  background-color: rgba(66, 114, 133, 0.5);
+  width: 60%;
+  padding: 0.2rem;
+}
+
+.game__answer__container {
+  padding: 0 0.5rem 0 0.5rem;
+  background-color: rgba(16, 51, 83, 0.205);
+  width: 20%;
+  padding: 0.2rem;
+}
+
+.game__input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.game__addRound {
+  cursor: pointer;
+  height: 50px;
+}
+
+.game__addRound:hover {
+  scale: 1.1;
+}
