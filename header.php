@@ -8,7 +8,8 @@
     <title>Main_page</title>
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/playTest.css" />
-    <script async src="scripts/playTest.js"></script>
+    <script src="scripts/jsquery.js"></script>
+    <script src="scripts/playTest.js"></script>s
 </head>
 
 <header class="header">
