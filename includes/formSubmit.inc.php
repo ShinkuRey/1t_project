@@ -1,14 +1,16 @@
 <?php
 include_once('db.php');
 
-$question_text = $_POST['question_text'];
-$answer_text = $_POST['answer_text'];
+$game__questions = $_POST['game__questions'];
+$game__answers = $_POST['game__answers'];
+
+// $question_text = $_POST['question_text'];
+// $answer_text = $_POST['answer_text'];
 // $user_id = $_POST['user_id'];
 
-$submitQuestions = "INSERT INTO `chgkdb` (`question_text`, `answer_text`) VALUES ('$question_text', '$answer_text');";
+$submitQuestions = "INSERT INTO `chgk_game` (`question_text`, `answer_text`) VALUES ('$game__questions', '$game__answers');";
 
 mysqli_query($connection, $submitQuestions);
-
 
 // $sql = "select * from Sasa;";
 // $result = mysqli_query($connection, $sql);

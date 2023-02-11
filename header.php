@@ -8,8 +8,8 @@
     <title>Main_page</title>
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/playTest.css" />
-    <script src="scripts/jsquery.js"></script>
-    <script src="scripts/playTest.js"></script>s
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script defer src="scripts/playTest.js"></script>
 </head>
 
 <header class="header">
